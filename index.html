@@ -7,6 +7,52 @@
     <title>Smooth Scroll Effect</title>
 </head>
 <body>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sections -->
+        <section id="home">
+            <h1>Home section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quia.</p>
+        </section>
+
+        <section id="about">
+            <h1>About section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quia.</p>
+        </section>
+
+        <section id="services">
+            <h1>Services section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, delectus!</p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, delectus!</p>
+        </section>
+
+    </div>
     <script src="./app.js"></script>
+
+    <!-- https://github.com/cferdinandi/smooth-scroll -->
+
+     <!-- External JS File (Smooth Scroll) -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+            speed: 800,
+        });
+    </script>
+
 </body>
 </html>
